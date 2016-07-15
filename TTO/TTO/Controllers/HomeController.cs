@@ -33,5 +33,19 @@ namespace TTO.Controllers
 
             return View();
         }
+
+        public ActionResult Schedule()
+        {
+            ViewBag.Message = "The Outsider's Schedule.";
+
+            return View();
+        }
+
+        public ActionResult Roster()
+        {
+            ViewBag.Message = "Roster.";
+
+            return View();
+        }
     }
 }
