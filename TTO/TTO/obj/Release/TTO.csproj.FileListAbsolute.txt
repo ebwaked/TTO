@@ -66,3 +66,4 @@ C:\Users\Ed\Documents\GitHub\TTO\TTO\TTO\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Ed\Documents\GitHub\TTO\TTO\TTO\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Ed\Documents\GitHub\TTO\TTO\TTO\obj\Release\TTO.dll
 C:\Users\Ed\Documents\GitHub\TTO\TTO\TTO\obj\Release\TTO.pdb
+C:\Users\Ed\Documents\GitHub\TTO\TTO\TTO\obj\Release\TTO.csprojResolveAssemblyReference.cache

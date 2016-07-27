@@ -188,6 +188,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\Background_03.png" />
     <Content Include="Images\outsiders.jpg" />
+    <Content Include="Music\KanyeWest_Champions.mp3" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\outsiders.pubxml" />
