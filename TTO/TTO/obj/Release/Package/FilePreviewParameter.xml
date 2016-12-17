@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="outsiders" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Ed\\Documents\\GitHub\\TTO\\TTO\\TTO\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Ed\\Documents\\GitHub\\TTO\\TTO\\TTO\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-TTO-20160715044758.mdf;Initial Catalog=aspnet-TTO-20160715044758;Integrated Security=True" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ed\\Documents\\GitHub\\TTO\\TTO\\TTO\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="TTO.Models.ApplicationDbContext-Web.config Connection String" description="" value="TTO.Models.ApplicationDbContext_ConnectionString" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ed\\Documents\\GitHub\\TTO\\TTO\\TTO\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TTO.Models.ApplicationDbContext']/@connectionString" />
+  </parameter>
+</parameters>
