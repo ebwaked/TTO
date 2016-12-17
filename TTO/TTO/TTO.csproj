@@ -187,7 +187,16 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\Background_03.png" />
+    <Content Include="Images\banner.jpg" />
+    <Content Include="Images\coaches_mvps.jpg" />
+    <Content Include="Images\community.jpg" />
+    <Content Include="Images\OsUp.jpg" />
     <Content Include="Images\outsiders.jpg" />
+    <Content Include="Images\owner.jpg" />
+    <Content Include="Images\sunShineBowl.jpg" />
+    <Content Include="Images\teamBeforeChampionship.jpg" />
+    <Content Include="Images\trophy.jpg" />
+    <Content Include="Images\winning.jpg" />
     <Content Include="Music\KanyeWest_Champions.mp3" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
