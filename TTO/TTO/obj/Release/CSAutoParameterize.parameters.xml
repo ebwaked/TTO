@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-TTO-20160715044758.mdf;Initial Catalog=aspnet-TTO-20160715044758;Integrated Security=True" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ed\\Documents\\GitHub\\TTO\\TTO\\TTO\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
-  </parameter>
-  <parameter name="TTO.Models.ApplicationDbContext-Web.config Connection String" description="TTO.Models.ApplicationDbContext Connection String used in web.config by the application to access the database." defaultValue="TTO.Models.ApplicationDbContext_ConnectionString" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ed\\Documents\\GitHub\\TTO\\TTO\\TTO\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TTO.Models.ApplicationDbContext']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Ed\\Workspace\\TTO\\TTO\\TTO\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
 </parameters>

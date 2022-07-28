@@ -15,20 +15,6 @@
 
 </head>
 <body>
-
-    
-    @*<iframe width="560" height="315" src="https://www.youtube.com/embed/_m9NLkqLsrk?autoplay=1" frameborder="0" allowfullscreen></iframe>*@
-    @*<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/267382882&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>*@
-    @*<embed src="~/Music/KanyeWest_Champions.mp3" autostart="true" loop="true" width="130" height="40">*@
-    <audio id="audio" preload="auto" controls="controls" loop="true" autobuffer>
-        <source src="~/Music/KanyeWest_Champions.mp3" type="audio/mpeg" />
-    </audio>
-
-
-    @*<audio preload="auto" src="~/Music/KanyeWest_Champions.mp3" loop="true" autobuffer>
-        Unsupported in Firefox
-    </audio>*@
-
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -45,15 +31,12 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Schedule", "Schedule", "Home")</li>
-                    <li>@Html.ActionLink("Roster", "Roster", "Home")</li>
                     <li>@Html.ActionLink("Film", "Film", "Home")</li>
                 </ul>
-                @*@Html.Partial("_LoginPartial")*@
             </div>
         </div>
     </div>
-    <!-- Spotify Widget -->
-    @*<iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A1244922165%3Aplaylist%3A4cN3bnVTSdzlN67TyfId7O" width="300" height="300" frameborder="0" allowtransparency="true" style="float:left"></iframe>*@
+
     <div class="container body-content">
         
         @RenderBody()
@@ -66,54 +49,5 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-
-    <script>
-
-        function setCookie(c_name, value, exdays) {
-            var exdate = new Date();
-            exdate.setDate(exdate.getDate() + exdays);
-            var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
-            document.cookie = c_name + "=" + c_value;
-        }
-
-        function getCookie(c_name) {
-            var i, x, y, ARRcookies = document.cookie.split(";");
-            for (i = 0; i < ARRcookies.length; i++) {
-                x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
-                y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
-                x = x.replace(/^\s+|\s+$/g, "");
-                if (x == c_name) {
-                    return unescape(y);
-                }
-            }
-        }
-
-        var song = document.getElementsByTagName('audio')[0];
-        var played = false;
-        var tillPlayed = getCookie('timePlayed');
-        function update() {
-            if (!played) {
-                if (tillPlayed) {
-                    song.currentTime = tillPlayed;
-                    song.play();
-                    played = true;
-                }
-                else {
-                    song.play();
-                    played = true;
-                }
-            }
-
-            else {
-                setCookie('timePlayed', song.currentTime);
-            }
-        }
-        setInterval(update, 1000);
-    </script>
-
-    <script>
-        var audioClip = document.getElementById('audio');
-        audioClip.volume = 0.2;
-    </script>
 </body>
 </html>
